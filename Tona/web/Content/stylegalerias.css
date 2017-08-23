@@ -1,0 +1,15 @@
+#encabezado {
+    background-color: #000;
+    text-align: center;
+    color: white;
+    max-width: 100%;
+    font-family: 'Coco Gothic';
+    font-size: 2em;
+    padding-top: 5px;
+    letter-spacing: 4px;
+}
+
+#encabezado:hover {
+        opacity: 0.8;
+}
+
