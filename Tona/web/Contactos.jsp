@@ -9,11 +9,11 @@
 <section>
     @if (ViewBag.Message == "sent")
     {
-        <script type="text/javascript">
+<!--        <script type="text/javascript">
             window.onload = function () {
                 alert("El mensaje se envio con exito");
             };
-        </script>
+        </script>-->
     }
     <h1 id="contacto">Contacto</h1>
     <div class="container">

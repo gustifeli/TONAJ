@@ -1,5 +1,6 @@
 #txtfooter { /*Texto footer sta... NO REALIZA NINGUNA FUNCION*/
     color: white;
+    vertical-align: middle;
 }
 
 #nav { /* navbar superior*/
@@ -7,6 +8,7 @@
     padding: 10px;
     background-color: black;
     border-radius: 0px;
+    width: 100%;
 }
 
 #img { /*img maniqui TONA*/
@@ -15,33 +17,21 @@
     display: inline-block;
     position: absolute;
     left: 144px;
-    top: 21px;
+    top: 23px;
 }
 
 #TONA { /* style titulo TONA*/
     color: #FFF;
     font-family: Ebrima,sans-serif;
     font-size: 3em;
+    text-decoration: none;
+    padding-left: 4%;
 }
 
 .txtbtn { /*Style botones producto y contacto*/
     color: #FFF;
     font-size: 16px;
     font-family: Ebrima,sans-serif;
-}
-
-#htmlLayoutTona {
-    position: absolute;
-    min-height: 95%;
-    background-color: black;
-}
-#bodyLayoutTona{
-    background-color: black;
-}
-
-#htmlLayoutTonaWhite {
-    height: 100%;
-    background-color: white;
 }
 
 #jmb {
@@ -79,7 +69,7 @@
     padding: 15px;
 }
 /*test*/
- div.upload {
+div.upload {
     width: 157px;
     height: 57px;
     background-color: black;
@@ -91,10 +81,14 @@
 
 
 div.upload input {
-        display: block !important;
-        width: 157px !important;
-        height: 57px !important;
-        opacity: 0 !important;
-        overflow: hidden !important;
+    display: block !important;
+    width: 157px !important;
+    height: 57px !important;
+    opacity: 0 !important;
+    overflow: hidden !important;
 
-    }
+}
+
+#htmlTona {
+    background: black;
+}

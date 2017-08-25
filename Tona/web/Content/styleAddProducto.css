@@ -1,0 +1,35 @@
+.btn-ttc,
+.btn-ttc:hover,
+.btn-ttc:active {
+  color: white;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: black;
+}
+
+#imgMin{
+    width:200px;
+    height: 136px;
+}
+
+.row {
+    border: 1px solid grey;
+    margin-right: 20%;
+    margin-left: 20%;
+    background-color: snow;
+    opacity: 0.9;
+    margin-top: 2%;
+}
+
+#cont {
+    padding-right: 2%;
+    padding-left: 2%;
+    width: 100%;
+}
+
+body,html{
+height: 100%;
+width: 100%;
+/*background: #ffffff;*/
+padding: 0;
+margin: 0;
+}
