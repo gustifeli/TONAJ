@@ -30,7 +30,7 @@ public final class GaleriaInvierno_jsp extends org.apache.jasper.runtime.HttpJsp
     PageContext _jspx_page_context = null;
 
     try {
-      response.setContentType("text/html;charset=UTF-8");
+      response.setContentType("text/html");
       pageContext = _jspxFactory.getPageContext(this, request, response,
       			null, true, 8192, true);
       _jspx_page_context = pageContext;
@@ -47,12 +47,12 @@ public final class GaleriaInvierno_jsp extends org.apache.jasper.runtime.HttpJsp
       out.write("<!DOCTYPE html>\r\n");
       out.write("<html>\r\n");
       out.write("<head>\r\n");
-      out.write("    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" />\r\n");
-      out.write("    <meta charset=\"utf-8\" />\r\n");
+      out.write("    <meta http-equiv=\"Content-Type\" content=\"text/html\"/>\r\n");
+      out.write("    <meta charset=\"UTF-8\"/>\r\n");
       out.write("    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n");
       out.write("    <link rel=\"stylesheet\" href=\"~/Content/bootstrap.min.css\">\r\n");
-      out.write("    <link rel=\"stylesheet\" href=\"~/web/stylegeneral.css\">\r\n");
-      out.write("    <link rel=\"stylesheet\" href=\"~/web/stylegalerias.css\">\r\n");
+      out.write("    <link rel=\"stylesheet\" href=\"~/Content/stylegeneral.css\">\r\n");
+      out.write("    <link rel=\"stylesheet\" href=\"~/Content/stylegalerias.css\">\r\n");
       out.write("    <link type=\"text/css\" href=\"~/Content/bootstrap.css\" rel=\"stylesheet\">\r\n");
       out.write("    <title>TONA</title>\r\n");
       out.write("</head>\r\n");
@@ -83,7 +83,7 @@ public final class GaleriaInvierno_jsp extends org.apache.jasper.runtime.HttpJsp
       out.write("            </div>\r\n");
       out.write("        </div>\r\n");
       out.write("    </div>\r\n");
-      out.write("    <h1 id=\"encabezado\">CAMPAÑA OTOÑO-INVIERNO</h1>\r\n");
+      out.write("    <h1 id=\"encabezado\">CAMPA?A OTO?O-INVIERNO</h1>\r\n");
       out.write("    <div>\r\n");
       out.write("        @RenderBody()\r\n");
       out.write("        <footer class=\"footer\">\r\n");
