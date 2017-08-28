@@ -4,9 +4,7 @@
     Author     : gusti
 --%>
 
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-
 <html>
 <head>
     <title>Login</title>
@@ -49,15 +47,15 @@
                         </div>
                         <div class="form-group">
                             <div class="col-md-offset-2 col-md-10 text-center">
-                                <input type="submit" value="Iniciar sesi贸n" class="btn btn-danger" />
+                                <input type="submit" value="Iniciar sesi髇" class="btn btn-danger" />
                             </div>
                         </div>
                         <!--<p>
                                 @Html.ActionLink("Registrar como nuevo usuario", "Register")
                             </p>
-                         Habilite esta opci贸n despu茅s de habilitar la confirmaci贸n de la cuenta para la funci贸n de restablecimiento de contrase帽a
+                         Habilite esta opci髇 despu閟 de habilitar la confirmaci髇 de la cuenta para la funci髇 de restablecimiento de contrase馻
                             <p>
-                                @Html.ActionLink("驴Ha olvidado su contrase帽a?", "ForgotPassword")
+                                @Html.ActionLink("縃a olvidado su contrase馻?", "ForgotPassword")
                             </p>-->
                     }
             </div>

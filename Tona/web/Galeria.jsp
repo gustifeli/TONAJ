@@ -6,7 +6,7 @@
 
 <!DOCTYPE html>
 <html>
-    <head >
+    <head>
         <meta charset="utf-8" http-equiv="Content-type" content="text/html">
         <meta name="viewport" content="width=device-width" initial-scale=1.0">
         <link rel="stylesheet" href="Content/stylegeneral.css">
@@ -48,24 +48,24 @@
     <h1 id="encabezado">GALERÍA</h1>
     <div class="container">
         <center><div class="row">
-            <div class="col-md-6">
+                <div class="col-xs-6 col-md-6" style="padding: 0;">
                 <div class="thumbnail">
                     <a href="GaleriaInvierno.jsp">
-<!--                        <img class="imgG" src="Image/otono.jpg"/>-->
-                        <div class="caption">
-                            <p>Otoño - Invierno</p>
-                        </div>
+                        <img class="imgG" src="Image/invierno.JPG"/>
                     </a>
-                </div>
+                    <div class="caption">
+                        <p style="margin-bottom: 0;">O&I</p>
+                    </div>
             </div>
-            <div class="col-md-6">
+            </div>
+            <div class="col-xs-6 col-md-6" style="padding: 0;">
                 <div class="thumbnail">
-                    <a href="GaleriaVerano.jsp">
-<!--                        <img class="imgG" src="Image/tona.jpg"/>-->
-                        <div class="caption">
-                            <p>Primavera - Verano</p>
-                        </div>
+                    <a href="Galeriaverano.jsp">
+                        <img class="imgG" src="Image/primav.JPG"/>
                     </a>
+                        <div class="caption">
+                            <p style="margin-bottom: 0;">P&V</p>
+                        </div>
                 </div>
             </div>
             </div></center>

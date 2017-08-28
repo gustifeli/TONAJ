@@ -13,11 +13,13 @@
 
 .row {
     border: 1px solid grey;
-    margin-right: 20%;
-    margin-left: 20%;
+    margin-right: 15%;
+    margin-left: 15%;
     background-color: snow;
     opacity: 0.9;
-    margin-top: 2%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    width: 70%;
 }
 
 #cont {
@@ -32,4 +34,28 @@ width: 100%;
 /*background: #ffffff;*/
 padding: 0;
 margin: 0;
+}
+/* style admin */ 
+#imgMin{
+    width:200px;
+    height: 136px;
+}
+.contenedor {
+    opacity: 0.9;
+}
+.btn-default {
+    float: right;
+} 
+
+.btn-default:hover, .btn-default:active {
+    background-color: black;
+    color: white;
+}
+#txt {
+    color: white;
+    padding-top: 15px;
+}
+
+#aMenu {
+    text-align: right;
 }

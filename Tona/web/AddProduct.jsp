@@ -12,7 +12,10 @@
         <link rel="stylesheet" type="text/css" href="Content/bootstrap.css" >
         <link rel="stylesheet" href="Content/stylegeneral.css">
         <link rel="stylesheet" href="Content/styleAddProducto.css">
-
+<!--        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>-->
+        <link rel="icon" type="image/png" href="Image/imgsolapa.png" />
+        <link rel="shortcut icon" href="Image/imgsolapa.png" type="image/png"/>
+        <title>+ - Producto</title>
     </head>
     <body background="Image/prueba.jpg">
         <div id="nav" class="navbar navbar-inverse">
@@ -27,7 +30,7 @@
                 </div>
                 <div class="navbar-collapse collapse">
                     <div class="pull-right">
-<!--                        @*<a id="btnMenu"  href="#collapse1"><img src="~/Image/menu_Sandwich.png"></a>*@-->
+                        <!--                        @*<a id="btnMenu"  href="#collapse1"><img src="~/Image/menu_Sandwich.png"></a>*@-->
                     </div>
                 </div>
                 <div id="collapse1" class="txtbtn panel-collapse collapse pull-right">
@@ -66,11 +69,11 @@
                                         <label class="checkbox-inline"><input type="checkbox" value="0">Primavera-Verano</label>
                                         <label class="checkbox-inline"><input type="checkbox" value="1">Otoño-Invierno</label>
                                     </th>
-                                    <th style="text-align: left; vertical-align: middle; width: 80%;">
-                                        <p><img id="imgMin" src="Image/tona.jpg" class="img-rounded"></p>
-                                    </th>
                                 </tr>
                             </table>
+                            <center><div>
+                                    <p><img id="imgMin" src="Image/tona.jpg" class="img-rounded"></p>
+                                </div></center>
                         </div>
                     </div>
                     <div class="form-group">
@@ -94,15 +97,15 @@
                         <div id="txtfooter">
                             <p class="text-center credit txtbtn"> - TONA - Santa Eufemia, Cordoba, Argentina</p>
                             <div class="text-center img">
-<!--                                <a href="https://www.instagram.com/t.o.n.aa/?hl=es"> <img src="Image/Instagram.png"></a>
-                                <a href="https://www.facebook.com/TONAAOFICIAL/?pnref=story"> <img src="Image/facebook.png"></a>-->
+                                <!--                                <a href="https://www.instagram.com/t.o.n.aa/?hl=es"> <img src="Image/Instagram.png"></a>
+                                                                <a href="https://www.facebook.com/TONAAOFICIAL/?pnref=story"> <img src="Image/facebook.png"></a>-->
                             </div>
                         </div>
                     </nav>
                 </div>
             </footer>
         </div>
-        <script src="Scripts/jquery-1.10.2.min.js"/>
-        <script src="Scripts/bootstrap.js"/>            
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="Scripts/bootstrap.min.js"></script>           
     </body>
 </html>
