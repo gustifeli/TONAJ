@@ -18,6 +18,46 @@
         <title>All Products</title>
     </head>
     <body background="Image/prueba.jpg">
+        <nav id="nav" class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a id="btnMenu" class="navbar-collapse pull-right" data-toggle="collapse" href="#collapse1"><img src="Image/menu_Sandwich.png"></a>
+                    <!--                @Html.ActionLink("TONA", "tona", "Home", new { area = "" }, new { @id = "TONA", @class = "navbar-brand" })-->
+                    <a href="Tona.jsp" id="TONA" class="navbar-brand">TONA</a>
+                    <a href="Login.jsp"><img id="img" src="Image/maniqui.png"></a>
+                </div>
+                <div class="navbar-collapse" id="myNavbar">
+<!--                    <ul class="nav navbar-nav navbar-right">
+                        <li id="drop" class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown"><b id="txt" href="#"><img src="Image/ic_user.png">@Html.Encode(User.Identity.Name)</b></a>
+
+                            <ul class="dropdown-menu">
+                                <li>
+
+                                    @using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm" }))
+                                    {
+                                    @Html.AntiForgeryToken()
+                                    <a href="javascript:document.getElementById('logoutForm').submit()">Cerrar sesión</a>
+                                    }
+                                </li>
+                            </ul>
+
+                        </li>
+                        </ul>-->
+                </div>
+                <div id="collapse1" class="txtbtn panel-collapse collapse pull-right">
+                    <div id="aMenu">
+                        <a class="aTxtColor" href="Galeria.jsp">Galeria</a>
+
+                    </div>
+                    <div id="aMenu">
+                        <a class="aTxtColor" href="Contactos.jsp">Contacto</a>
+                    </div>
+
+                </div>
+
+            </div>
+        </nav>
         <div class="contenedor">
             <h1 id="productos"> Productos<a href="AddProduct.jsp" class="btn btn-default"><span class="glyphicon glyphicon-plus-sign"></span> Producto</a></h1>
             <table class="table table-responsive table-hover">
@@ -92,4 +132,22 @@
                 </tr>
             </table>
         </div>
-    </section>
+        <div>
+            <footer class="footer">
+                <div>
+                    <nav id="nav" class=" navbar-inverse navbar-fixed-bottom">
+                        <div id="txtfooter">
+                            <p class="text-center credit txtbtn">- TONA - Santa Eufemia, Cordoba, Argentina</p>
+                            <div class="text-center img">
+                                <!--                            <a href="https://www.instagram.com/t.o.n.aa/?hl=es"> <img src="Image/Instagram.png"></a>
+                                                            <a href="https://www.facebook.com/TONAAOFICIAL/?pnref=story"> <img src="Image/facebook.png"></a>-->
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </footer>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="Scripts/bootstrap.min.js"></script>
+    </body>
+</html>

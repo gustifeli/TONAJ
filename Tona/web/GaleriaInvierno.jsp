@@ -6,7 +6,6 @@
 
 <!DOCTYPE html>
 <html>
-<<<<<<< HEAD
     <head>
         <meta charset="utf-8" http-equiv="Content-type" content="text/html">
         <meta name="viewport" content="width=device-width" initial-scale=1.0">
@@ -28,26 +27,6 @@
                         <a href="Tona.jsp" id="TONA" class="navbar-brand">TONA</a>
                         <a href="Login.jsp"><img id="img" src="Image/maniqui.png"></a>
                     </div>
-=======
-<head>
-    <meta http-equiv="Content-Type" content="text/html"/>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="~/Content/bootstrap.min.css">
-    <link rel="stylesheet" href="~/Content/stylegeneral.css">
-    <link rel="stylesheet" href="~/Content/stylegalerias.css">
-    <link type="text/css" href="~/Content/bootstrap.css" rel="stylesheet">
-    <title>TONA</title>
-</head>
-<body>
-    <div id="nav" class="navbar navbar-inverse">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <a id="btnMenu" class="navbar-collapse pull-right" data-toggle="collapse" href="#collapse1"><img src="~/web/Image/menu_Sandwich.png"></a>
-                <div>
-                    @Html.ActionLink("TONA", "tona", "Home", new { area = "" }, new { @id = "TONA", @class = "navbar-brand" })
-                    <a href="@Url.Action("Login","Account")"><img id="img" src="~/web/Image/maniqui.png"></a>
->>>>>>> master
                 </div>
                 <div class="navbar-collapse collapse">
                     <div class="pull-right">
@@ -66,12 +45,7 @@
                 </div>
             </div>
         </div>
-<<<<<<< HEAD
         <h1 id="encabezado">CAMPAÑA OTOÑO-INVIERNO</h1>
-=======
-    </div>
-    <h1 id="encabezado">CAMPA?A OTO?O-INVIERNO</h1>
->>>>>>> master
     <div>
         <footer class="footer">
             <div>

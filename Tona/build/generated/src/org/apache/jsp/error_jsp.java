@@ -51,13 +51,13 @@ public final class error_jsp extends org.apache.jasper.runtime.HttpJspBase
       _jspx_out = out;
       _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
 
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("            \n");
-      out.write("\n");
-      out.write("<!DOCTYPE html>\n");
-      out.write("\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("            \r\n");
+      out.write("\r\n");
+      out.write("<!DOCTYPE html>\r\n");
+      out.write("\r\n");
       java.lang.String mensaje = null;
       synchronized (request) {
         mensaje = (java.lang.String) _jspx_page_context.getAttribute("mensaje", PageContext.REQUEST_SCOPE);
@@ -66,35 +66,35 @@ public final class error_jsp extends org.apache.jasper.runtime.HttpJspBase
           _jspx_page_context.setAttribute("mensaje", mensaje, PageContext.REQUEST_SCOPE);
         }
       }
-      out.write("\n");
-      out.write("<html>\n");
-      out.write("    <head>\n");
-      out.write("        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n");
-      out.write("        <link type=\"text/css\" href=\"css/bootstrap.css\" rel=\"stylesheet\">\n");
-      out.write("        <link type=\"text/css\" href=\"css/error.css\" rel=\"stylesheet\">\n");
-      out.write("        <link type=\"text/css\" href=\"css/bootstrap.min.css\" rel=\"stylesheet\">\n");
-      out.write("        <title>Error</title>\n");
-      out.write("    </head>\n");
-      out.write("    <body>\n");
-      out.write("        <div id=\"table\" class=\"text-center\">\n");
-      out.write("            <div id=\"\">\n");
-      out.write("                <div class=\"row\">\n");
-      out.write("                    <div class=\"col-xs-4 col-md-6 col-lg-8 text-center\" id=\"divcenter\">\n");
-      out.write("                        <div><label>Error en el inicio de sesion</label></div>\n");
+      out.write("\r\n");
+      out.write("<html>\r\n");
+      out.write("    <head>\r\n");
+      out.write("        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\r\n");
+      out.write("        <link type=\"text/css\" href=\"Content/bootstrap.css\" rel=\"stylesheet\">\r\n");
+      out.write("        <link type=\"text/css\" href=\"Content/error.css\" rel=\"stylesheet\">\r\n");
+      out.write("        <link type=\"text/css\" href=\"Content/bootstrap.min.css\" rel=\"stylesheet\">\r\n");
+      out.write("        <title>Error</title>\r\n");
+      out.write("    </head>\r\n");
+      out.write("    <body>\r\n");
+      out.write("        <div id=\"table\" class=\"text-center\">\r\n");
+      out.write("            <div id=\"\">\r\n");
+      out.write("                <div class=\"row\">\r\n");
+      out.write("                    <div class=\"col-xs-4 col-md-6 col-lg-8 text-center\" id=\"divcenter\">\r\n");
+      out.write("                        <div><label class=\"control-label\">Error en el inicio de sesion</label></div>\r\n");
       out.write("                        <div><label> ");
       if (_jspx_meth_c_out_0(_jspx_page_context))
         return;
-      out.write(" </label></div>\n");
-      out.write("\n");
-      out.write("                    </div>\n");
-      out.write("                </div>\n");
-      out.write("            </div>\n");
-      out.write("\n");
-      out.write("        </div>\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("    </body>\n");
-      out.write("</html>\n");
+      out.write(" </label></div>\r\n");
+      out.write("\r\n");
+      out.write("                    </div>\r\n");
+      out.write("                </div>\r\n");
+      out.write("            </div>\r\n");
+      out.write("\r\n");
+      out.write("        </div>\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("    </body>\r\n");
+      out.write("</html>\r\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;
