@@ -49,16 +49,16 @@ public final class Admin_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("        <meta charset=\"utf-8\" http-equiv=\"Content-type\" content=\"text/html\">\r\n");
       out.write("        <meta name=\"viewport\" content=\"width=device-width\" initial-scale=1.0\">\r\n");
       out.write("        <link rel=\"stylesheet\" href=\"Content/stylegeneral.css\">\r\n");
-      out.write("        <link rel=\"stylesheet\" href=\"Content/stylegalerias.css\">\r\n");
+      out.write("        <link rel=\"stylesheet\" href=\"Content/styleAddProducto.css\">\r\n");
       out.write("        <link type=\"text/css\" href=\"Content/bootstrap.css\" rel=\"stylesheet\">\r\n");
       out.write("        <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css\"/>\r\n");
       out.write("        <link rel=\"icon\" type=\"image/png\" href=\"Image/imgsolapa.png\" />\r\n");
       out.write("        <link rel=\"shortcut icon\" href=\"Image/imgsolapa.png\" type=\"image/png\"/>\r\n");
-      out.write("        <title>Bienvenida TONA</title>\r\n");
+      out.write("        <title>All Products</title>\r\n");
       out.write("    </head>\r\n");
-      out.write("    <body>\r\n");
-      out.write("    <div class=\"contenedor\">\r\n");
-      out.write("            <h1 id=\"productos\"> Productos<a href=\"@Url.Action(\"AddProduct\",\"Admin\")\" class=\"btn btn-default\"><span class=\"glyphicon glyphicon-plus-sign\"></span> Producto</a></h1>\r\n");
+      out.write("    <body background=\"Image/prueba.jpg\">\r\n");
+      out.write("        <div class=\"contenedor\">\r\n");
+      out.write("            <h1 id=\"productos\"> Productos<a href=\"AddProduct.jsp\" class=\"btn btn-default\"><span class=\"glyphicon glyphicon-plus-sign\"></span> Producto</a></h1>\r\n");
       out.write("            <table class=\"table table-responsive table-hover\">\r\n");
       out.write("                <tr>\r\n");
       out.write("                    <td style=\"text-align: left; vertical-align: middle; width: 20%;\">Imagen</td>\r\n");
@@ -66,7 +66,7 @@ public final class Admin_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                    <td style=\"text-align: left; vertical-align: middle; width: 30%;\">Acciones</td>\r\n");
       out.write("                </tr>\r\n");
       out.write("                <tr>\r\n");
-      out.write("                    <td><img id=\"imgMin\" src=\"~/Image/tona.jpg\" class=\"img-rounded\"></td>\r\n");
+      out.write("                    <td><img id=\"imgMin\" src=\"Image/tona.jpg\" class=\"img-rounded\"></td>\r\n");
       out.write("                    <td>\r\n");
       out.write("                        <input type=\"text\" class=\"form-control\" placeholder=\"Descripción\">\r\n");
       out.write("                    </td>\r\n");
@@ -82,7 +82,7 @@ public final class Admin_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                    </td>\r\n");
       out.write("                </tr>\r\n");
       out.write("                <tr>\r\n");
-      out.write("                    <td><img id=\"imgMin\" src=\"~/Image/tona1.jpg\" class=\"img-rounded\"></td>\r\n");
+      out.write("                    <td><img id=\"imgMin\" src=\"Image/tona1.jpg\" class=\"img-rounded\"></td>\r\n");
       out.write("                    <td>\r\n");
       out.write("                        <input type=\"text\" class=\"form-control\" placeholder=\"Descripción\">\r\n");
       out.write("                    </td>\r\n");
@@ -98,7 +98,7 @@ public final class Admin_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                    </td>\r\n");
       out.write("                </tr>\r\n");
       out.write("                <tr>\r\n");
-      out.write("                    <td><img id=\"imgMin\" src=\"~/Image/tona2.jpg\" class=\"img-rounded\"></td>\r\n");
+      out.write("                    <td><img id=\"imgMin\" src=\"Image/tona2.jpg\" class=\"img-rounded\"></td>\r\n");
       out.write("                    <td>\r\n");
       out.write("                        <input type=\"text\" class=\"form-control\" placeholder=\"Descripción\">\r\n");
       out.write("                    </td>\r\n");
@@ -114,7 +114,7 @@ public final class Admin_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                    </td>\r\n");
       out.write("                </tr>\r\n");
       out.write("                <tr>\r\n");
-      out.write("                    <td><img id=\"imgMin\" src=\"~/Image/tona.jpg\" class=\"img-rounded\"></td>\r\n");
+      out.write("                    <td><img id=\"imgMin\" src=\"Image/tona.jpg\" class=\"img-rounded\"></td>\r\n");
       out.write("                    <td>\r\n");
       out.write("                        <input type=\"text\" class=\"form-control\" placeholder=\"Descripción\">\r\n");
       out.write("                    </td>\r\n");
@@ -131,7 +131,7 @@ public final class Admin_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                </tr>\r\n");
       out.write("            </table>\r\n");
       out.write("        </div>\r\n");
-      out.write("</section>\r\n");
+      out.write("    </section>\r\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

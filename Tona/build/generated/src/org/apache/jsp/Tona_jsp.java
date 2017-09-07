@@ -43,7 +43,7 @@ public final class Tona_jsp extends org.apache.jasper.runtime.HttpJspBase
 
       out.write("\r\n");
       out.write("<!DOCTYPE html>\r\n");
-      out.write("<html>\r\n");
+      out.write("<html id=\"htmlTona\">\r\n");
       out.write("    <head >\r\n");
       out.write("        <meta charset=\"utf-8\" http-equiv=\"Content-type\" content=\"text/html\">\r\n");
       out.write("        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n");
@@ -54,6 +54,7 @@ public final class Tona_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("        <link rel=\"shortcut icon\" href=\"Image/imgsolapa.png\" type=\"image/png\"/>\r\n");
       out.write("        <title>TONA</title>\r\n");
       out.write("    </head>\r\n");
+      out.write("    <body>\r\n");
       out.write("        <div id=\"nav\" class=\"navbar navbar-inverse\">\r\n");
       out.write("            <div class=\"container-fluid\">\r\n");
       out.write("                <div class=\"navbar-header\">\r\n");
@@ -128,7 +129,8 @@ public final class Tona_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("            </footer>\r\n");
       out.write("        </div>\r\n");
       out.write("            <script src=\"https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js\"></script>\r\n");
-      out.write("        <script src=\"Scripts/bootstrap.min.js\"></script>      \r\n");
+      out.write("        <script src=\"Scripts/bootstrap.min.js\"></script>\r\n");
+      out.write("        </body>\r\n");
       out.write("</html>");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
