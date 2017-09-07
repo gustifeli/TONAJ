@@ -75,12 +75,12 @@ public final class error_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("        <link type=\"text/css\" href=\"Content/bootstrap.min.css\" rel=\"stylesheet\">\r\n");
       out.write("        <title>Error</title>\r\n");
       out.write("    </head>\r\n");
-      out.write("    <body>\r\n");
+      out.write("    <body background=\"Image/prueba.jpg\">\r\n");
       out.write("        <div id=\"table\" class=\"text-center\">\r\n");
       out.write("            <div id=\"\">\r\n");
       out.write("                <div class=\"row\">\r\n");
       out.write("                    <div class=\"col-xs-4 col-md-6 col-lg-8 text-center\" id=\"divcenter\">\r\n");
-      out.write("                        <div><label class=\"control-label\">Error en el inicio de sesion</label></div>\r\n");
+      out.write("                        <div><label class=\"control-label\">Sorry,that page doesn't exist!</label></div>\r\n");
       out.write("                        <div><label> ");
       if (_jspx_meth_c_out_0(_jspx_page_context))
         return;
@@ -91,8 +91,6 @@ public final class error_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("            </div>\r\n");
       out.write("\r\n");
       out.write("        </div>\r\n");
-      out.write("\r\n");
-      out.write("\r\n");
       out.write("    </body>\r\n");
       out.write("</html>\r\n");
     } catch (Throwable t) {

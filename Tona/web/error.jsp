@@ -19,11 +19,11 @@
         <title>Error</title>
     </head>
     <body background="Image/prueba.jpg">
-        <div id="table" class="text-center">
+        <div class="text-center">
             <div id="">
-                <div class="row">
+                <div>
                     <div class="col-xs-4 col-md-6 col-lg-8 text-center" id="divcenter">
-                        <div><label class="control-label">Sorry,that page doesn't exist!</label></div>
+                        <div><label class="control-label"><img src="Image/Error.png"></label></div>
                         <div><label> <c:out value="${mensaje}"/> </label></div>
 
                     </div>

@@ -146,7 +146,7 @@ public final class Contactos_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                <div>\r\n");
       out.write("                    <nav id=\"nav\" class=\" navbar-inverse navbar-fixed-bottom\">\r\n");
       out.write("                        <div id=\"txtfooter\">\r\n");
-      out.write("                            <p class=\"text-center credit txtbtn\"><time datetime=\"fechaISO\">2017</time> - TONA - Santa Eufemia, Cordoba, Argentina</p>\r\n");
+      out.write("                            <p class=\"text-center credit txtbtn\"> - TONA - Santa Eufemia, Cordoba, Argentina</p>\r\n");
       out.write("                            <div class=\"text-center img\">\r\n");
       out.write("                                <a href=\"https://www.instagram.com/t.o.n.aa/?hl=es\"> <img src=\"Image/Instagram.png\"></a>\r\n");
       out.write("                                <a href=\"https://www.facebook.com/TONAAOFICIAL/?pnref=story\"> <img src=\"Image/facebook.png\"></a>\r\n");
