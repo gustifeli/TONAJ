@@ -3,8 +3,12 @@
     Created on : 17/08/2017, 18:51:13
     Author     : gusti
 --%>
-
+<%@taglib prefix="t" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%-- En caso de que exista una sesion iniciada redirecciono a index.jsp. "NO tiene caso mostrar este formulario cuando hay una sesion iniciada --%>
+<t:if test="${sessionScope['sessionUser']!=null}">
+    <% response.sendRedirect("Admin.jsp");%>
+</t:if>
 <!DOCTYPE html>
 
 <html>
@@ -21,7 +25,8 @@
             <div id="">
                 <div id="">
                     <img src="Image/TONAlogin.png" >
-                    <form action="" method="post">
+                    <p style="color: #c9302c">${sessionScope['error']}</p>
+                    <form action="LogIn" method="post">
                         <div class="form-group">
                             <label>Usuario </label>
                             <div class="col-lg-12">
@@ -34,35 +39,14 @@
                                 <input type="text" name="pass" placeholder="Ingrese su Contraseña" class="form-control"
                             </div>
                         </div>
-                        <!--                        <div class="form-group">
-                                                    <div class="col-md-offset-2 col-md-10">
-                                                        <div class="checkbox">
-                                                            @Html.CheckBoxFor(m => m.RememberMe)
-                                                            @Html.LabelFor(m => m.RememberMe)
-                                                        </div>
-                                                    </div>
-                                                </div>-->
                         <div class="form-group">
                             <div class="col-md-offset-1 col-md-10 text-center">
                                 <input type="submit" value="Iniciar sesión" class="btn btn-danger" />
                             </div>
                         </div>
                     </form>
-                    <!--<p>
-                            @Html.ActionLink("Registrar como nuevo usuario", "Register")
-                        </p>
-                     Habilite esta opción después de habilitar la confirmación de la cuenta para la función de restablecimiento de contraseña
-                        <p>
-                            @Html.ActionLink("¿Ha olvidado su contraseña?", "ForgotPassword")
-                        </p>-->
-
                 </div>
             </div>
-            <!--<div class="col-md-4">
-                    <section id="socialLoginForm">
-                        @Html.Partial("_ExternalLoginsListPartial", new ExternalLoginListViewModel { ReturnUrl = ViewBag.ReturnUrl })
-                    </section>
-                </div>-->
         </div>
 
 

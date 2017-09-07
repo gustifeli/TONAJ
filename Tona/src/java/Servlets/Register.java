@@ -5,16 +5,14 @@
  */
 package Servlets;
 
-
 import Controlador.Data;
-import Controlador.DataUser;
 import Modelos.Validador;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -24,7 +22,8 @@ import javax.servlet.http.HttpSession;
  *
  * @author gusti
  */
-public class LogIn extends HttpServlet {
+@WebServlet(name = "Register", urlPatterns = {"/Register"})
+public class Register extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -43,10 +42,10 @@ public class LogIn extends HttpServlet {
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>Servlet LogIn</title>");            
+            out.println("<title>Servlet Register</title>");
             out.println("</head>");
             out.println("<body>");
-            out.println("<h1>Servlet LogIn at " + request.getContextPath() + "</h1>");
+            out.println("<h1>Servlet Register at " + request.getContextPath() + "</h1>");
             out.println("</body>");
             out.println("</html>");
         }
@@ -64,13 +63,8 @@ public class LogIn extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        processRequest(request, response);
-        
-        String error = "No puede acceder, verifique los datos e intentelo nuevamente.";
-        request.setAttribute("mensaje", error);
-        
-        RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/error.jsp");
-        dispatcher.forward(request, response);
+        //processRequest(request, response);
+        response.sendRedirect("Tona.jsp");
     }
 
     /**
@@ -85,45 +79,48 @@ public class LogIn extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         //processRequest(request, response);
-        HttpSession r = request.getSession(true);
+        HttpSession resp = request.getSession(true);
+        PrintWriter out = response.getWriter();
         String user = request.getParameter("name");
         String pass = request.getParameter("pass");
+        String confirmPass = request.getParameter("pass2");
         Pattern p = Pattern.compile("^([0-9a-zA-Z]([_.w]*[0-9a-zA-Z])*@([0-9a-zA-Z][-w]*[0-9a-zA-Z].)+([a-zA-Z]{2,9}.)+[a-zA-Z]{2,3})$");
         Matcher m = p.matcher(user);
         Validador v = new Validador();
-        DataUser d = new DataUser();
-        
-        //Campos vacios
-        if (user.isEmpty()||pass.isEmpty()) {
-            r.setAttribute("error", "Hay campos vacios");
-        }else{
-            //No hay campos vacios. 
-            //si la direccion es valida
+        Data d = new Data();
+
+        if (user.isEmpty() || pass.isEmpty() || confirmPass.isEmpty()) {
+            resp.setAttribute("error", "Hay campos vacios");
+        } else {
             if (m.find()) {
-                r.setAttribute("error", "El usuario no es correcto");
-            }else{
-                //La direccion es correcta. Verificar si la contrseña es correcta
+                resp.setAttribute("error", "El nombre de usuario no es correcto");
+            } else {
                 if (v.isUsernameOrPasswordValid(pass)) {
-                    try {
-                        d.conectar();
-                        if (d.cuentaExistente(user, pass)) {
-                            //la cuenta existe. obtengo el nombre de usuario y lo guardo en la session
-                            String users = d.getName(user);
-                            r.setAttribute("sessionUser", users);
-                        }else{
-                            r.setAttribute("error", "Este usuario ya fue registrado");
+                    if (pass.equals(confirmPass)) {
+                        try {
+                            d.conectar();
+                            if (d.userExistente(user)) {
+                                resp.setAttribute("error", "El usuario ya existe");
+                                
+                            }else{
+                                d.registrarUsuario(user, pass);
+                                resp.setAttribute("error", null);
+                            }
+                            d.desconectar();
+                        } catch(Exception e)  {
+                            out.println("Ocurrio la sig excepcion: " + e);
                         }
-                        d.desconectar();
-                        
-                    } catch (Exception e) {
+                    }else{
+                        resp.setAttribute("error", "Las contraseñas no son iguales");
                     }
                 }else{
-                    r.setAttribute("error", "Contraseña no es válida");
+                    resp.setAttribute("error", "Contraseña no es valida");
                 }
             }
-        response.sendRedirect("Login.jsp");
+            response.sendRedirect("Register.jsp");
         }
     }
+
     @Override
     public String getServletInfo() {
         return "Short description";

@@ -3,54 +3,59 @@
     Created on : 17/08/2017, 19:04:12
     Author     : gusti
 --%>
+<%@taglib prefix="t" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@page contentType="text/html" pageEncoding="UTF-8" %>
+<t:if test="${sessionScope['sessionUser']!= null}">
+    <% response.sendRedirect("Login.jsp");%>
+</t:if>
 
 <!DOCTYPE html>
 
 <html>
-<head>
-    <title>Registro</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link type="text/css" href="~/Content/bootstrap.css" rel="stylesheet">
-    <link type="text/css" href="~/Content/stylereg.css" rel="stylesheet" />
-</head>
-<body>
-    <h2>@ViewBag.Title.</h2>
-
-    @using (Html.BeginForm("Register", "Account", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
-    {
-        @Html.AntiForgeryToken()
+    <head>
+        <title>Registro</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link type="text/css" href="~/Content/bootstrap.css" rel="stylesheet">
+        <link type="text/css" href="~/Content/stylereg.css" rel="stylesheet" />
+    </head>
+    <body>
         <h4>Cree una cuenta nueva.</h4>
-        <hr />
+        <hr/>
         <div class="container">
-            @Html.ValidationSummary("", new { @class = "text-danger" })
-            <div class="form-group">
-                @Html.LabelFor(m => m.Email, new { @class = "col-md-2 control-label" })
-                <div class="col-xs-10 col-md-5">
-                    @Html.TextBoxFor(m => m.Email, new { @class = "form-control" })
+            <p style="color: #d43f3a">${sessionScope['error']}</p>
+            <form action="Register" method="post">
+                <div class="form-group">
+                    <label>Usuario</label>
+                    <div class="col-xs-10 col-md-5">
+                        <input type="text"  name="username" placeholder="Ingrese su usuario" class="form-control">
+                    </div>
                 </div>
-            </div>
-            <div class="form-group">
-                @Html.LabelFor(m => m.Password, new { @class = "col-md-2 control-label" })
-                <div class="col-xs-10 col-md-5">
-                    @Html.PasswordFor(m => m.Password, new { @class = "form-control" })
+                <div class="form-group">
+                    <label>Contraseña</label>
+                    <div class="col-xs-10 col-md-5">
+                        <input type="text" name="pass" placeholder="Ingrese su Contraseña" class="form-control"
+                    </div>
                 </div>
-            </div>
-            <div class="form-group">
-                @Html.LabelFor(m => m.ConfirmPassword, new { @class = "col-md-2 control-label" })
-                <div class="col-xs-10 col-md-5">
-                    @Html.PasswordFor(m => m.ConfirmPassword, new { @class = "form-control" })
+                <div class="form-group">
+                    <label>Confirmar contraseña</label>
+                    <div class="col-xs-10 col-md-5">
+                        <input type="text" name="Confpass" placeholder="Confirme su Contraseña" class="form-control"
+                    </div>
                 </div>
-            </div>
-            <div class="form-group">
-                <div class="col-md-offset-2 col-md-10">
-                    <input type="submit" class="btn btn-default" value="Registrarse" />
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-10">
+                        <input type="submit" class="btn btn-default" value="Registrarse" />
+                    </div>
                 </div>
+            </form>
+            <div class="form-group">
+                <p><a href="Login.jsp"> Iniciar Session</p>
             </div>
         </div>
-    }
-    @section Scripts {
+        }
+        @section Scripts {
         @Scripts.Render("~/bundles/jqueryval")
-    }
-</body>
+        }
+    </body>
 </html>
