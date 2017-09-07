@@ -11,10 +11,20 @@ public final class Register_jsp extends org.apache.jasper.runtime.HttpJspBase
 
   private static java.util.List<String> _jspx_dependants;
 
+  private org.apache.jasper.runtime.TagHandlerPool _jspx_tagPool_t_if_test;
+
   private org.glassfish.jsp.api.ResourceInjector _jspx_resourceInjector;
 
   public java.util.List<String> getDependants() {
     return _jspx_dependants;
+  }
+
+  public void _jspInit() {
+    _jspx_tagPool_t_if_test = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
+  }
+
+  public void _jspDestroy() {
+    _jspx_tagPool_t_if_test.release();
   }
 
   public void _jspService(HttpServletRequest request, HttpServletResponse response)
@@ -30,7 +40,7 @@ public final class Register_jsp extends org.apache.jasper.runtime.HttpJspBase
     PageContext _jspx_page_context = null;
 
     try {
-      response.setContentType("text/html");
+      response.setContentType("text/html;charset=UTF-8");
       pageContext = _jspxFactory.getPageContext(this, request, response,
       			null, true, 8192, true);
       _jspx_page_context = pageContext;
@@ -43,55 +53,83 @@ public final class Register_jsp extends org.apache.jasper.runtime.HttpJspBase
 
       out.write("\r\n");
       out.write("\r\n");
+      out.write("\r\n");
+      //  t:if
+      org.apache.taglibs.standard.tag.rt.core.IfTag _jspx_th_t_if_0 = (org.apache.taglibs.standard.tag.rt.core.IfTag) _jspx_tagPool_t_if_test.get(org.apache.taglibs.standard.tag.rt.core.IfTag.class);
+      _jspx_th_t_if_0.setPageContext(_jspx_page_context);
+      _jspx_th_t_if_0.setParent(null);
+      _jspx_th_t_if_0.setTest(((java.lang.Boolean) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${sessionScope['sessionUser']!= null}", java.lang.Boolean.class, (PageContext)_jspx_page_context, null)).booleanValue());
+      int _jspx_eval_t_if_0 = _jspx_th_t_if_0.doStartTag();
+      if (_jspx_eval_t_if_0 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
+        do {
+          out.write("\r\n");
+          out.write("    ");
+ response.sendRedirect("Login.jsp");
+          out.write('\r');
+          out.write('\n');
+          int evalDoAfterBody = _jspx_th_t_if_0.doAfterBody();
+          if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
+            break;
+        } while (true);
+      }
+      if (_jspx_th_t_if_0.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+        _jspx_tagPool_t_if_test.reuse(_jspx_th_t_if_0);
+        return;
+      }
+      _jspx_tagPool_t_if_test.reuse(_jspx_th_t_if_0);
+      out.write("\r\n");
+      out.write("\r\n");
       out.write("<!DOCTYPE html>\r\n");
       out.write("\r\n");
       out.write("<html>\r\n");
-      out.write("<head>\r\n");
-      out.write("    <title>Registro</title>\r\n");
-      out.write("    <meta charset=\"utf-8\">\r\n");
-      out.write("    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\r\n");
-      out.write("    <link type=\"text/css\" href=\"~/Content/bootstrap.css\" rel=\"stylesheet\">\r\n");
-      out.write("    <link type=\"text/css\" href=\"~/Content/stylereg.css\" rel=\"stylesheet\" />\r\n");
-      out.write("</head>\r\n");
-      out.write("<body>\r\n");
-      out.write("    <h2>@ViewBag.Title.</h2>\r\n");
-      out.write("\r\n");
-      out.write("    @using (Html.BeginForm(\"Register\", \"Account\", FormMethod.Post, new { @class = \"form-horizontal\", role = \"form\" }))\r\n");
-      out.write("    {\r\n");
-      out.write("        @Html.AntiForgeryToken()\r\n");
+      out.write("    <head>\r\n");
+      out.write("        <title>Registro</title>\r\n");
+      out.write("        <meta charset=\"utf-8\">\r\n");
+      out.write("        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\r\n");
+      out.write("        <link type=\"text/css\" href=\"~/Content/bootstrap.css\" rel=\"stylesheet\">\r\n");
+      out.write("        <link type=\"text/css\" href=\"~/Content/stylereg.css\" rel=\"stylesheet\" />\r\n");
+      out.write("    </head>\r\n");
+      out.write("    <body>\r\n");
       out.write("        <h4>Cree una cuenta nueva.</h4>\r\n");
-      out.write("        <hr />\r\n");
+      out.write("        <hr/>\r\n");
       out.write("        <div class=\"container\">\r\n");
-      out.write("            @Html.ValidationSummary(\"\", new { @class = \"text-danger\" })\r\n");
-      out.write("            <div class=\"form-group\">\r\n");
-      out.write("                @Html.LabelFor(m => m.Email, new { @class = \"col-md-2 control-label\" })\r\n");
-      out.write("                <div class=\"col-xs-10 col-md-5\">\r\n");
-      out.write("                    @Html.TextBoxFor(m => m.Email, new { @class = \"form-control\" })\r\n");
+      out.write("            <p style=\"color: #d43f3a\">");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${sessionScope['error']}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+      out.write("</p>\r\n");
+      out.write("            <form action=\"Register\" method=\"post\">\r\n");
+      out.write("                <div class=\"form-group\">\r\n");
+      out.write("                    <label>Usuario</label>\r\n");
+      out.write("                    <div class=\"col-xs-10 col-md-5\">\r\n");
+      out.write("                        <input type=\"text\"  name=\"username\" placeholder=\"Ingrese su usuario\" class=\"form-control\">\r\n");
+      out.write("                    </div>\r\n");
       out.write("                </div>\r\n");
-      out.write("            </div>\r\n");
-      out.write("            <div class=\"form-group\">\r\n");
-      out.write("                @Html.LabelFor(m => m.Password, new { @class = \"col-md-2 control-label\" })\r\n");
-      out.write("                <div class=\"col-xs-10 col-md-5\">\r\n");
-      out.write("                    @Html.PasswordFor(m => m.Password, new { @class = \"form-control\" })\r\n");
+      out.write("                <div class=\"form-group\">\r\n");
+      out.write("                    <label>Contraseña</label>\r\n");
+      out.write("                    <div class=\"col-xs-10 col-md-5\">\r\n");
+      out.write("                        <input type=\"text\" name=\"pass\" placeholder=\"Ingrese su Contraseña\" class=\"form-control\"\r\n");
+      out.write("                    </div>\r\n");
       out.write("                </div>\r\n");
-      out.write("            </div>\r\n");
-      out.write("            <div class=\"form-group\">\r\n");
-      out.write("                @Html.LabelFor(m => m.ConfirmPassword, new { @class = \"col-md-2 control-label\" })\r\n");
-      out.write("                <div class=\"col-xs-10 col-md-5\">\r\n");
-      out.write("                    @Html.PasswordFor(m => m.ConfirmPassword, new { @class = \"form-control\" })\r\n");
+      out.write("                <div class=\"form-group\">\r\n");
+      out.write("                    <label>Confirmar contraseña</label>\r\n");
+      out.write("                    <div class=\"col-xs-10 col-md-5\">\r\n");
+      out.write("                        <input type=\"text\" name=\"Confpass\" placeholder=\"Confirme su Contraseña\" class=\"form-control\"\r\n");
+      out.write("                    </div>\r\n");
       out.write("                </div>\r\n");
-      out.write("            </div>\r\n");
-      out.write("            <div class=\"form-group\">\r\n");
-      out.write("                <div class=\"col-md-offset-2 col-md-10\">\r\n");
-      out.write("                    <input type=\"submit\" class=\"btn btn-default\" value=\"Registrarse\" />\r\n");
+      out.write("                <div class=\"form-group\">\r\n");
+      out.write("                    <div class=\"col-md-offset-2 col-md-10\">\r\n");
+      out.write("                        <input type=\"submit\" class=\"btn btn-default\" value=\"Registrarse\" />\r\n");
+      out.write("                    </div>\r\n");
       out.write("                </div>\r\n");
+      out.write("            </form>\r\n");
+      out.write("            <div class=\"form-group\">\r\n");
+      out.write("                <p><a href=\"Login.jsp\"> Iniciar Session</p>\r\n");
       out.write("            </div>\r\n");
       out.write("        </div>\r\n");
-      out.write("    }\r\n");
-      out.write("    @section Scripts {\r\n");
+      out.write("        }\r\n");
+      out.write("        @section Scripts {\r\n");
       out.write("        @Scripts.Render(\"~/bundles/jqueryval\")\r\n");
-      out.write("    }\r\n");
-      out.write("</body>\r\n");
+      out.write("        }\r\n");
+      out.write("    </body>\r\n");
       out.write("</html>\r\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
