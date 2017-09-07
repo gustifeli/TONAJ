@@ -18,12 +18,12 @@
         <link type="text/css" href="Content/bootstrap.min.css" rel="stylesheet">
         <title>Error</title>
     </head>
-    <body>
+    <body background="Image/prueba.jpg">
         <div id="table" class="text-center">
             <div id="">
                 <div class="row">
                     <div class="col-xs-4 col-md-6 col-lg-8 text-center" id="divcenter">
-                        <div><label class="control-label">Error en el inicio de sesion</label></div>
+                        <div><label class="control-label">Sorry,that page doesn't exist!</label></div>
                         <div><label> <c:out value="${mensaje}"/> </label></div>
 
                     </div>
@@ -31,7 +31,5 @@
             </div>
 
         </div>
-
-
     </body>
 </html>
