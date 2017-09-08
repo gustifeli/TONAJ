@@ -36,7 +36,8 @@ label {
 
 #contenido {
     height: 100%;
-    /*text-align: center;*/
+/*    display: table;*/
+    text-align: center;
     margin-right: 0px;
 }
 

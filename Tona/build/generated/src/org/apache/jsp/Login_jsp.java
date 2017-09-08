@@ -11,10 +11,20 @@ public final class Login_jsp extends org.apache.jasper.runtime.HttpJspBase
 
   private static java.util.List<String> _jspx_dependants;
 
+  private org.apache.jasper.runtime.TagHandlerPool _jspx_tagPool_t_if_test;
+
   private org.glassfish.jsp.api.ResourceInjector _jspx_resourceInjector;
 
   public java.util.List<String> getDependants() {
     return _jspx_dependants;
+  }
+
+  public void _jspInit() {
+    _jspx_tagPool_t_if_test = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
+  }
+
+  public void _jspDestroy() {
+    _jspx_tagPool_t_if_test.release();
   }
 
   public void _jspService(HttpServletRequest request, HttpServletResponse response)
@@ -44,6 +54,32 @@ public final class Login_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\r\n");
       out.write("\r\n");
       out.write("\r\n");
+      out.write('\r');
+      out.write('\n');
+      //  t:if
+      org.apache.taglibs.standard.tag.rt.core.IfTag _jspx_th_t_if_0 = (org.apache.taglibs.standard.tag.rt.core.IfTag) _jspx_tagPool_t_if_test.get(org.apache.taglibs.standard.tag.rt.core.IfTag.class);
+      _jspx_th_t_if_0.setPageContext(_jspx_page_context);
+      _jspx_th_t_if_0.setParent(null);
+      _jspx_th_t_if_0.setTest(((java.lang.Boolean) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${sessionScope['sessionUser']!=null}", java.lang.Boolean.class, (PageContext)_jspx_page_context, null)).booleanValue());
+      int _jspx_eval_t_if_0 = _jspx_th_t_if_0.doStartTag();
+      if (_jspx_eval_t_if_0 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
+        do {
+          out.write("\r\n");
+          out.write("    ");
+ response.sendRedirect("Admin.jsp");
+          out.write('\r');
+          out.write('\n');
+          int evalDoAfterBody = _jspx_th_t_if_0.doAfterBody();
+          if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
+            break;
+        } while (true);
+      }
+      if (_jspx_th_t_if_0.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+        _jspx_tagPool_t_if_test.reuse(_jspx_th_t_if_0);
+        return;
+      }
+      _jspx_tagPool_t_if_test.reuse(_jspx_th_t_if_0);
+      out.write("\r\n");
       out.write("<!DOCTYPE html>\r\n");
       out.write("\r\n");
       out.write("<html>\r\n");
@@ -60,7 +96,10 @@ public final class Login_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("            <div id=\"\">\r\n");
       out.write("                <div id=\"\">\r\n");
       out.write("                    <img src=\"Image/TONAlogin.png\" >\r\n");
-      out.write("                    <form action=\"\" method=\"post\">\r\n");
+      out.write("                    <p style=\"color: #c9302c\">");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${sessionScope['error']}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+      out.write("</p>\r\n");
+      out.write("                    <form action=\"LogIn\" method=\"post\">\r\n");
       out.write("                        <div class=\"form-group\">\r\n");
       out.write("                            <label>Usuario </label>\r\n");
       out.write("                            <div class=\"col-lg-12\">\r\n");
@@ -73,35 +112,14 @@ public final class Login_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                                <input type=\"text\" name=\"pass\" placeholder=\"Ingrese su Contraseña\" class=\"form-control\"\r\n");
       out.write("                            </div>\r\n");
       out.write("                        </div>\r\n");
-      out.write("                        <!--                        <div class=\"form-group\">\r\n");
-      out.write("                                                    <div class=\"col-md-offset-2 col-md-10\">\r\n");
-      out.write("                                                        <div class=\"checkbox\">\r\n");
-      out.write("                                                            @Html.CheckBoxFor(m => m.RememberMe)\r\n");
-      out.write("                                                            @Html.LabelFor(m => m.RememberMe)\r\n");
-      out.write("                                                        </div>\r\n");
-      out.write("                                                    </div>\r\n");
-      out.write("                                                </div>-->\r\n");
       out.write("                        <div class=\"form-group\">\r\n");
       out.write("                            <div class=\"col-md-offset-1 col-md-10 text-center\">\r\n");
       out.write("                                <input type=\"submit\" value=\"Iniciar sesión\" class=\"btn btn-danger\" />\r\n");
       out.write("                            </div>\r\n");
       out.write("                        </div>\r\n");
       out.write("                    </form>\r\n");
-      out.write("                    <!--<p>\r\n");
-      out.write("                            @Html.ActionLink(\"Registrar como nuevo usuario\", \"Register\")\r\n");
-      out.write("                        </p>\r\n");
-      out.write("                     Habilite esta opción después de habilitar la confirmación de la cuenta para la función de restablecimiento de contraseña\r\n");
-      out.write("                        <p>\r\n");
-      out.write("                            @Html.ActionLink(\"¿Ha olvidado su contraseña?\", \"ForgotPassword\")\r\n");
-      out.write("                        </p>-->\r\n");
-      out.write("\r\n");
       out.write("                </div>\r\n");
       out.write("            </div>\r\n");
-      out.write("            <!--<div class=\"col-md-4\">\r\n");
-      out.write("                    <section id=\"socialLoginForm\">\r\n");
-      out.write("                        @Html.Partial(\"_ExternalLoginsListPartial\", new ExternalLoginListViewModel { ReturnUrl = ViewBag.ReturnUrl })\r\n");
-      out.write("                    </section>\r\n");
-      out.write("                </div>-->\r\n");
       out.write("        </div>\r\n");
       out.write("\r\n");
       out.write("\r\n");
