@@ -20,7 +20,7 @@
         <link type="text/css" href="Content/styleLogReg.css" rel="stylesheet" />
     </head>
     <body>
-        <h4>Cree una cuenta nueva.</h4>
+    <center><h4>Cree una cuenta nueva</h4></center>
         <hr/>
         <div class="contenido">
             <p style="color: #d43f3a">${sessionScope['error']}</p>
@@ -35,26 +35,25 @@
                 <div class="form-group">
                     </br><label>Contraseña</label>
                     <div class="col-lg-offset-3 col-lg-6">
-                        <input type="text" name="pass" placeholder="Ingrese su Contraseña" class="form-control">
+                        <input type="password" name="pass" placeholder="Ingrese su Contraseña" class="form-control">
                     </div>
                 </div>
                 <div class="form-group">
                     </br><label>Confirmar contraseña</label>
                     <div class="col-lg-offset-3 col-lg-6">
-                        <input type="text" name="Confpass" placeholder="Confirme su Contraseña" class="form-control">
+                        <input type="password" name="Confpass" placeholder="Confirme su Contraseña" class="form-control">
                         </br>
 
                     </div>
                 </div>
                 <div class="form-group">
                     <div class="col-lg-offset-3 col-lg-6 text-center">
-                        <input type="submit" class="btn btn-default" value="Registrarse" />
+                        </br><input type="submit" class="btn btn-default" value="Registrarse" />
                     </div>
                 </div>
-                </br>
                 <div class="form-group">
                     <div class="col-lg-offset-3 col-lg-6 text-center">
-                        <p class="btn btn-default"><a href="Login.jsp"> Iniciar Sesion</p>
+                        </br><p class="btn btn-default"><a href="Login.jsp"> Iniciar Sesion</a></p>
                     </div>
                 </div>
             </form>
