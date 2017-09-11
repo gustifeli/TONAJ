@@ -15,7 +15,7 @@ public class Data {
     //Contectar con la base de datos.
     public void conectar() throws SQLException,ClassNotFoundException{
         Class.forName("com.mysql.jdbc.Driver");
-        connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/tonaWeb?zeroDateTimeBehavior=convertToNull", UserDb, Passdb);
+        connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/tonaWeb", UserDb, Passdb);
     }
     
     //Desconectar la base de datos
