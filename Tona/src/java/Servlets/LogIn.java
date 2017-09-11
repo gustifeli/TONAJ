@@ -121,7 +121,7 @@ public class LogIn extends HttpServlet {
                     r.setAttribute("error", "Contraseña no es válida");
                 }
             }
-        response.sendRedirect("Login.jsp");
+        response.sendRedirect("Admin.jsp");
         }
     }
     @Override

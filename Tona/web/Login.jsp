@@ -30,7 +30,7 @@
                         <div class="form-group">
                             <label>Usuario </label>
                             <div class="col-lg-12">
-                                <input type="text"  name="username" placeholder="Ingrese su usuario" class="form-control">
+                                <input type="text"  name="name" placeholder="Ingrese su usuario" class="form-control">
                             </div>
                         </div>
                         <div class="form-group">

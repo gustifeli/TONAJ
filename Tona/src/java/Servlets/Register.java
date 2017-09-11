@@ -37,18 +37,18 @@ public class Register extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
-        try (PrintWriter out = response.getWriter()) {
-            /* TODO output your page here. You may use following sample code. */
-            out.println("<!DOCTYPE html>");
-            out.println("<html>");
-            out.println("<head>");
-            out.println("<title>Servlet Register</title>");
-            out.println("</head>");
-            out.println("<body>");
-            out.println("<h1>Servlet Register at " + request.getContextPath() + "</h1>");
-            out.println("</body>");
-            out.println("</html>");
-        }
+//        try (PrintWriter out = response.getWriter()) {
+//            /* TODO output your page here. You may use following sample code. */
+//            out.println("<!DOCTYPE html>");
+//            out.println("<html>");
+//            out.println("<head>");
+//            out.println("<title>Servlet Register</title>");
+//            out.println("</head>");
+//            out.println("<body>");
+//            out.println("<h1>Servlet Register at " + request.getContextPath() + "</h1>");
+//            out.println("</body>");
+//            out.println("</html>");
+//        }
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
@@ -84,10 +84,11 @@ public class Register extends HttpServlet {
         String user = request.getParameter("name");
         String pass = request.getParameter("pass");
         String confirmPass = request.getParameter("pass2");
-        Pattern p = Pattern.compile("^([0-9a-zA-Z]([_.w]*[0-9a-zA-Z])*@([0-9a-zA-Z][-w]*[0-9a-zA-Z].)+([a-zA-Z]{2,9}.)+[a-zA-Z]{2,3})$");
+        Pattern p = Pattern.compile("^[0-9a-zA-Z]$");
         Matcher m = p.matcher(user);
         Validador v = new Validador();
         Data d = new Data();
+        System.out.println("Error servlet");
 
         if (user.isEmpty() || pass.isEmpty() || confirmPass.isEmpty()) {
             resp.setAttribute("error", "Hay campos vacios");
@@ -104,7 +105,8 @@ public class Register extends HttpServlet {
                                 
                             }else{
                                 d.registrarUsuario(user, pass);
-                                resp.setAttribute("error", null);
+                                resp.setAttribute("error", "Usuario Registrado");
+                                
                             }
                             d.desconectar();
                         } catch(Exception e)  {
