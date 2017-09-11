@@ -27,23 +27,24 @@
                     <a href="Login.jsp"><img id="img" src="Image/maniqui.png"></a>
                 </div>
                 <div class="navbar-collapse" id="myNavbar">
-<!--                    <ul class="nav navbar-nav navbar-right">
+                    <ul class="nav navbar-nav navbar-right">
                         <li id="drop" class="dropdown">
-                            <a class="dropdown-toggle" data-toggle="dropdown"><b id="txt" href="#"><img src="Image/ic_user.png">@Html.Encode(User.Identity.Name)</b></a>
-
+                            <a class="dropdown-toggle" data-toggle="dropdown"><b id="txt" href="#"><img src="Image/ic_user.png"></b></a>
+<!--<a class="dropdown-toggle" data-toggle="dropdown"><b id="txt" href="#"><img src="Image/ic_user.png">@Html.Encode(User.Identity.Name)</b></a>-->
                             <ul class="dropdown-menu">
                                 <li>
 
-                                    @using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm" }))
+<!--                                    @using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm" }))
                                     {
-                                    @Html.AntiForgeryToken()
-                                    <a href="javascript:document.getElementById('logoutForm').submit()">Cerrar sesión</a>
-                                    }
+                                    @Html.AntiForgeryToken()-->
+<!--                                    <a href="javascript:document.getElementById('logoutForm').submit()">Cerrar sesión</a>-->
+                                    <!--}-->
+                                                                        <a href="Logout" method="get"  > Cerrar sesión</a>
                                 </li>
                             </ul>
 
                         </li>
-                        </ul>-->
+                        </ul>
                 </div>
                 <div id="collapse1" class="txtbtn panel-collapse collapse pull-right">
                     <div id="aMenu">
