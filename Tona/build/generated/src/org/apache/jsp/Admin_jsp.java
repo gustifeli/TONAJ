@@ -66,6 +66,7 @@ public final class Admin_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                    <a href=\"Login.jsp\"><img id=\"img\" src=\"Image/maniqui.png\"></a>\r\n");
       out.write("                </div>\r\n");
       out.write("                <div class=\"navbar-collapse\" id=\"myNavbar\">\r\n");
+<<<<<<< HEAD
       out.write("                    <ul class=\"nav navbar-nav navbar-right\">\r\n");
       out.write("                        <li id=\"drop\" class=\"dropdown\">\r\n");
       out.write("                            <a class=\"dropdown-toggle\" data-toggle=\"dropdown\"><b id=\"txt\" href=\"#\"><img src=\"Image/ic_user.png\"></b></a>\r\n");
@@ -78,11 +79,29 @@ public final class Admin_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                                    @Html.AntiForgeryToken()-->\r\n");
       out.write("                                    <a href=\"javascript:document.getElementById('logoutForm').submit()\">Cerrar sesión</a>\r\n");
       out.write("                                    <!--}-->\r\n");
+=======
+      out.write("<!--                    <ul class=\"nav navbar-nav navbar-right\">\r\n");
+      out.write("                        <li id=\"drop\" class=\"dropdown\">\r\n");
+      out.write("                            <a class=\"dropdown-toggle\" data-toggle=\"dropdown\"><b id=\"txt\" href=\"#\"><img src=\"Image/ic_user.png\">@Html.Encode(User.Identity.Name)</b></a>\r\n");
+      out.write("\r\n");
+      out.write("                            <ul class=\"dropdown-menu\">\r\n");
+      out.write("                                <li>\r\n");
+      out.write("\r\n");
+      out.write("                                    @using (Html.BeginForm(\"LogOff\", \"Account\", FormMethod.Post, new { id = \"logoutForm\" }))\r\n");
+      out.write("                                    {\r\n");
+      out.write("                                    @Html.AntiForgeryToken()\r\n");
+      out.write("                                    <a href=\"javascript:document.getElementById('logoutForm').submit()\">Cerrar sesión</a>\r\n");
+      out.write("                                    }\r\n");
+>>>>>>> master
       out.write("                                </li>\r\n");
       out.write("                            </ul>\r\n");
       out.write("\r\n");
       out.write("                        </li>\r\n");
+<<<<<<< HEAD
       out.write("                        </ul>\r\n");
+=======
+      out.write("                        </ul>-->\r\n");
+>>>>>>> master
       out.write("                </div>\r\n");
       out.write("                <div id=\"collapse1\" class=\"txtbtn panel-collapse collapse pull-right\">\r\n");
       out.write("                    <div id=\"aMenu\">\r\n");

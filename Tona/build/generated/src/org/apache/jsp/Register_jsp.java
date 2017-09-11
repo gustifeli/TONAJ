@@ -86,8 +86,8 @@ public final class Register_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("        <title>Registro</title>\r\n");
       out.write("        <meta charset=\"utf-8\">\r\n");
       out.write("        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\r\n");
-      out.write("        <link type=\"text/css\" href=\"Content/bootstrap.css\" rel=\"stylesheet\">\r\n");
-      out.write("        <link type=\"text/css\" href=\"Content/styleLogReg.css\" rel=\"stylesheet\" />\r\n");
+      out.write("        <link type=\"text/css\" href=\"~/Content/bootstrap.css\" rel=\"stylesheet\">\r\n");
+      out.write("        <link type=\"text/css\" href=\"~/Content/stylereg.css\" rel=\"stylesheet\" />\r\n");
       out.write("    </head>\r\n");
       out.write("    <body>\r\n");
       out.write("        <h4>Cree una cuenta nueva.</h4>\r\n");
@@ -97,12 +97,17 @@ public final class Register_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${sessionScope['error']}", java.lang.String.class, (PageContext)_jspx_page_context, null));
       out.write("</p>\r\n");
       out.write("            <form action=\"Register\" method=\"post\">\r\n");
+<<<<<<< HEAD
       out.write("                <div class=\"form-group \">\r\n");
+=======
+      out.write("                <div class=\"form-group\">\r\n");
+>>>>>>> master
       out.write("                    <label>Usuario</label>\r\n");
       out.write("                    <div class=\"col-lg-offset-3 col-lg-6\">\r\n");
       out.write("                        <input type=\"text\"  name=\"name\" placeholder=\"Ingrese su usuario\" class=\"form-control\">\r\n");
       out.write("                    </div>\r\n");
       out.write("                </div>\r\n");
+<<<<<<< HEAD
       out.write("\r\n");
       out.write("                <div class=\"form-group\">\r\n");
       out.write("                    </br><label>Contraseña</label>\r\n");
@@ -116,6 +121,18 @@ public final class Register_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                        <input type=\"text\" name=\"pass2\" placeholder=\"Confirme su Contraseña\" class=\"form-control\">\r\n");
       out.write("                        </br>\r\n");
       out.write("\r\n");
+=======
+      out.write("                <div class=\"form-group\">\r\n");
+      out.write("                    <label>Contraseña</label>\r\n");
+      out.write("                    <div class=\"col-xs-10 col-md-5\">\r\n");
+      out.write("                        <input type=\"text\" name=\"pass\" placeholder=\"Ingrese su Contraseña\" class=\"form-control\"\r\n");
+      out.write("                    </div>\r\n");
+      out.write("                </div>\r\n");
+      out.write("                <div class=\"form-group\">\r\n");
+      out.write("                    <label>Confirmar contraseña</label>\r\n");
+      out.write("                    <div class=\"col-xs-10 col-md-5\">\r\n");
+      out.write("                        <input type=\"text\" name=\"Confpass\" placeholder=\"Confirme su Contraseña\" class=\"form-control\"\r\n");
+>>>>>>> master
       out.write("                    </div>\r\n");
       out.write("                </div>\r\n");
       out.write("                <div class=\"form-group\">\r\n");
@@ -130,8 +147,18 @@ public final class Register_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                    </div>\r\n");
       out.write("                </div>\r\n");
       out.write("            </form>\r\n");
+<<<<<<< HEAD
       out.write("\r\n");
+=======
+      out.write("            <div class=\"form-group\">\r\n");
+      out.write("                <p><a href=\"Login.jsp\"> Iniciar Session</p>\r\n");
+      out.write("            </div>\r\n");
+>>>>>>> master
       out.write("        </div>\r\n");
+      out.write("        }\r\n");
+      out.write("        @section Scripts {\r\n");
+      out.write("        @Scripts.Render(\"~/bundles/jqueryval\")\r\n");
+      out.write("        }\r\n");
       out.write("    </body>\r\n");
       out.write("</html>\r\n");
     } catch (Throwable t) {
