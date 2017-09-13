@@ -21,43 +21,42 @@
     </head>
     <body>
     <center><h4>Cree una cuenta nueva</h4></center>
-        <hr/>
-        <div class="contenido">
-            <p style="color: #d43f3a">${sessionScope['error']}</p>
-            <form action="Register" method="post">
-                <div class="form-group ">
-                    <label>Usuario</label>
-                    <div class="col-lg-offset-3 col-lg-6">
-                        <input type="text"  name="name" placeholder="Ingrese su usuario" class="form-control">
-                    </div>
+    <hr/>
+    <div class="contenido">
+        <p style="color: #d43f3a">${sessionScope['error']}</p>
+        <form action="Register" method="post">
+            <div class="form-group ">
+                <label>Usuario</label>
+                <div class="col-lg-offset-3 col-lg-6">
+                    <input type="text"  name="name" placeholder="Ingrese su usuario" class="form-control">
                 </div>
+            </div>
 
-                <div class="form-group">
-                    </br><label>Contraseña</label>
-                    <div class="col-lg-offset-3 col-lg-6">
-                        <input type="password" name="pass" placeholder="Ingrese su Contraseña" class="form-control">
-                    </div>
+            <div class="form-group">
+                </br><label>Contraseña</label>
+                <div class="col-lg-offset-3 col-lg-6">
+                    <input type="password" name="pass" placeholder="Ingrese su Contraseña" class="form-control">
                 </div>
-                <div class="form-group">
-                    </br><label>Confirmar contraseña</label>
-                    <div class="col-lg-offset-3 col-lg-6">
-                        <input type="password" name="Confpass" placeholder="Confirme su Contraseña" class="form-control">
-                        <input type="text" name="pass2" placeholder="Confirme su Contraseña" class="form-control">
-                        </br>
+            </div>
+            <div class="form-group">
+                </br><label>Confirmar contraseña</label>
+                <div class="col-lg-offset-3 col-lg-6">
+                    <input type="text" name="pass2" placeholder="Confirme su Contraseña" class="form-control">
+                    </br>
 
-                    </div>
                 </div>
-                <div class="form-group">
-                    <div class="col-lg-offset-3 col-lg-6 text-center">
-                        </br><input type="submit" class="btn btn-default" value="Registrarse" />
-                    </div>
+            </div>
+            <div class="form-group">
+                <div class="col-lg-offset-3 col-lg-6 text-center">
+                    </br><input type="submit" class="btn btn-default" value="Registrarse" />
                 </div>
-                <div class="form-group">
-                    <div class="col-lg-offset-3 col-lg-6 text-center">
-                        </br><p class="btn btn-default"><a href="Login.jsp"> Iniciar Sesion</a></p>
-                    </div>
+            </div>
+            <div class="form-group">
+                <div class="col-lg-offset-3 col-lg-6 text-center">
+                    </br><p class="btn btn-default"><a href="Login.jsp"> Iniciar Sesion</a></p>
                 </div>
-            </form>
-        </div>
-    </body>
+            </div>
+        </form>
+    </div>
+</body>
 </html>
