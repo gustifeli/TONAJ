@@ -41,11 +41,8 @@
                 <div class="form-group">
                     </br><label>Confirmar contraseña</label>
                     <div class="col-lg-offset-3 col-lg-6">
-<<<<<<< HEAD
                         <input type="password" name="Confpass" placeholder="Confirme su Contraseña" class="form-control">
-=======
                         <input type="text" name="pass2" placeholder="Confirme su Contraseña" class="form-control">
->>>>>>> master
                         </br>
 
                     </div>
@@ -61,7 +58,6 @@
                     </div>
                 </div>
             </form>
-
         </div>
     </body>
 </html>

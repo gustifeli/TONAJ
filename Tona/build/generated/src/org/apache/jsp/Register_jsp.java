@@ -100,7 +100,7 @@ public final class Register_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                <div class=\"form-group \">\r\n");
       out.write("                    <label>Usuario</label>\r\n");
       out.write("                    <div class=\"col-lg-offset-3 col-lg-6\">\r\n");
-      out.write("                        <input type=\"text\"  name=\"username\" placeholder=\"Ingrese su usuario\" class=\"form-control\">\r\n");
+      out.write("                        <input type=\"text\"  name=\"name\" placeholder=\"Ingrese su usuario\" class=\"form-control\">\r\n");
       out.write("                    </div>\r\n");
       out.write("                </div>\r\n");
       out.write("\r\n");
@@ -114,6 +114,7 @@ public final class Register_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                    </br><label>Confirmar contraseña</label>\r\n");
       out.write("                    <div class=\"col-lg-offset-3 col-lg-6\">\r\n");
       out.write("                        <input type=\"password\" name=\"Confpass\" placeholder=\"Confirme su Contraseña\" class=\"form-control\">\r\n");
+      out.write("                        <input type=\"text\" name=\"pass2\" placeholder=\"Confirme su Contraseña\" class=\"form-control\">\r\n");
       out.write("                        </br>\r\n");
       out.write("\r\n");
       out.write("                    </div>\r\n");
@@ -129,7 +130,6 @@ public final class Register_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                    </div>\r\n");
       out.write("                </div>\r\n");
       out.write("            </form>\r\n");
-      out.write("\r\n");
       out.write("        </div>\r\n");
       out.write("    </body>\r\n");
       out.write("</html>\r\n");
