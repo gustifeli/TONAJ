@@ -58,6 +58,9 @@
 .aTxtColor {
     color: white;
 }
+.aTxtColor:active {
+    color: white;
+}
 
 #aMenu {
     color: white;
