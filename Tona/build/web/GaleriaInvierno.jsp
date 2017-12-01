@@ -46,43 +46,22 @@
             </div>
         </div>
         <h1 id="encabezado">CAMPAÑA OTOÑO-INVIERNO</h1>
-        <div class="container">
-            <center><span>Ordenar por:</span>
-                <select class="sort-by">
-                    <option value="price-ascending">Menor a mayor</option>
-                    <option value="price-descending">Mayor a menor</option>
-                    <option value="alpha-ascending">A-Z</option>
-                    <option value="alpha-descenging">Z-A</option>
-                    <option value="created-descending">Más nuevo al más viejo</option>
-                    <option value="created-ascending">Más viejo al más nuevo</option>
-                </select></center>
-            <div class="col-md-3 col-md-9">
-                <h2>Talles</h2>
-                <div class="filters">
-                    <button type="button" class="size-filter p-half-all-xs" onclick="LS.urlAddParam('Talle', 'S');">S</button>
-                    <button type="button" class="size-filter p-half-all-xs" onclick="LS.urlAddParam('Talle', 'M');">M</button>
-                    <button type="button" class="size-filter p-half-all-xs" onclick="LS.urlAddParam('Talle', 'L');">L</button>
-                    <button type="button" class="size-filter p-half-all-xs" onclick="LS.urlAddParam('Talle', 'XL');">XL</button>
-                </div>
-            </div>
-        </div>
-<!--        <div><img id="fondo" src="Image/vv.png"></div>-->
-        <div>
-            <footer class="footer">
-                <div>
-                    <nav id="nav" class=" navbar-inverse navbar-fixed-bottom">
-                        <div id="txtfooter">
-                            <p class="text-center credit txtbtn">- TONA - Santa Eufemia, Cordoba, Argentina</p>
-                            <div class="text-center img">
-                                <a href="https://www.instagram.com/t.o.n.aa/?hl=es"> <img src="Image/Instagram.png"></a>
-                                <a href="https://www.facebook.com/TONAAOFICIAL/?pnref=story"> <img src="Image/facebook.png"></a>
-                            </div>
+    <div>
+        <footer class="footer">
+            <div>
+                <nav id="nav" class=" navbar-inverse navbar-fixed-bottom">
+                    <div id="txtfooter">
+                        <p class="text-center credit txtbtn">- TONA - Santa Eufemia, Cordoba, Argentina</p>
+                        <div class="text-center img">
+                            <a href="https://www.instagram.com/t.o.n.aa/?hl=es"> <img src="Image/Instagram.png"></a>
+                            <a href="https://www.facebook.com/TONAAOFICIAL/?pnref=story"> <img src="Image/facebook.png"></a>
                         </div>
-                    </nav>
-                </div>
-            </footer>
-        </div>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+                    </div>
+                </nav>
+            </div>
+        </footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script src="Scripts/bootstrap.min.js"></script>
     </body>
 </html>

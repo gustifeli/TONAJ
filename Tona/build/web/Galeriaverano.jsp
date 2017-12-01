@@ -45,26 +45,6 @@
             </div>
         </div>
         <h1 id="encabezado">CAMPAÑA PRIMAVERA-VERANO</h1>
-                <div class="container">
-            <center><span>Ordenar por:</span>
-                <select class="sort-by">
-                    <option value="price-ascending">Menor a mayor</option>
-                    <option value="price-descending">Mayor a menor</option>
-                    <option value="alpha-ascending">A-Z</option>
-                    <option value="alpha-descenging">Z-A</option>
-                    <option value="created-descending">Más nuevo al más viejo</option>
-                    <option value="created-ascending">Más viejo al más nuevo</option>
-                </select></center>
-            <div class="col-md-3 col-md-9">
-                <h2>Talles</h2>
-                <div class="filters">
-                    <button type="button" class="size-filter p-half-all-xs" onclick="LS.urlAddParam('Talle', 'S');">S</button>
-                    <button type="button" class="size-filter p-half-all-xs" onclick="LS.urlAddParam('Talle', 'M');">M</button>
-                    <button type="button" class="size-filter p-half-all-xs" onclick="LS.urlAddParam('Talle', 'L');">L</button>
-                    <button type="button" class="size-filter p-half-all-xs" onclick="LS.urlAddParam('Talle', 'XL');">XL</button>
-                </div>
-            </div>
-        </div>
     <div>
         <footer class="footer">
             <div>

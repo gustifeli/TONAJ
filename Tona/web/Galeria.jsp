@@ -46,24 +46,8 @@
             </div>
         </div>
     <h1 id="encabezado">GALERÍA</h1>
-    <center><div class="row">
-    <div class="polaroid">
-        <a href="GaleriaInvierno.jsp">
-        <img class="imgG" src="Image/invierno.JPG" style="width: 100%"></a>
-        <div class="caption">
-            <p>O&I</p>
-        </div>    
-    </div>
-
-    <div class="polaroid">
-        <a href="Galeriaverano.jsp">
-        <img src="Image/primav.JPG" style="width: 100%"></a>
-        <div class="caption">
-            <p>P&V</p>
-        </div>
-    </div>
-        </div></center>
-<!--        <center><div class="row">
+    <div class="container">
+        <center><div class="row">
                 <div class="col-xs-6 col-md-6" style="padding: 0;">
                 <div class="thumbnail">
                     <a href="GaleriaInvierno.jsp">
@@ -71,11 +55,6 @@
                     </a>
                     <div class="caption">
                         <p style="margin-bottom: 0;">O&I</p>
-                    </div>
-                    <div class="overlay">
-                        <div class="text">
-                            Otoño/Invierno
-                        </div>
                     </div>
             </div>
             </div>
@@ -89,7 +68,8 @@
                         </div>
                 </div>
             </div>
-            </div></center>-->
+            </div></center>
+    </div>
     <div>
         <footer class="footer">
             <div>
