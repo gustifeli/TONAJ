@@ -32,4 +32,22 @@
     <welcome-file-list>
         <welcome-file>redirect.jsp</welcome-file>
     </welcome-file-list>
+    
+    <!--SMTP Settings-->
+    <context-param>
+        <param-name>host</param-name>
+        <param-value>smtp.live.com</param-value>
+    </context-param>
+    <context-param>
+        <param-name>host</param-name>
+        <param-value>25</param-value>
+    </context-param>
+    <context-param>
+        <param-name>pass</param-name>
+        <param-value>MYPASS</param-value>
+    </context-param>
+    <context-param>
+        <param-name>user</param-name>
+        <param-value>MYUSER</param-value>
+    </context-param>
 </web-app>
