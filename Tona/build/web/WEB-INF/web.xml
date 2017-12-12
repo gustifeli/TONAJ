@@ -44,10 +44,10 @@
     </context-param>
     <context-param>
         <param-name>pass</param-name>
-        <param-value>MYPASS</param-value>
+        <param-value>Tona1234</param-value>
     </context-param>
     <context-param>
         <param-name>user</param-name>
-        <param-value>MYUSER</param-value>
+        <param-value>tonaoficial@hotmail.com</param-value>
     </context-param>
 </web-app>
