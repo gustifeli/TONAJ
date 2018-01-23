@@ -68,10 +68,11 @@
     background: white;
 }
 
-.size-filter:active {
+.size-filter:focus {
     border: 1px black solid;
     background: black;
     color: white;
+    outline: none;
     
 }
 
@@ -81,4 +82,17 @@
 
 h2 {
     margin-left: 15px;
+}
+#vv {
+    opacity: 0.3;
+    height: 35%;
+    width: 15%;
+    float: right;
+    margin: auto;
+    padding: auto;
+    position: static;
+}
+
+.polaroid img {
+    width: 200px;
 }

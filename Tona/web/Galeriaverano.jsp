@@ -46,6 +46,7 @@
         </div>
         <h1 id="encabezado">CAMPAÑA PRIMAVERA-VERANO</h1>
          <div class="container">
+                        <center><img id="vv" src="Image/vv.jpg"></center>
             <center><span>Ordenar por:</span>
                 <select class="sort-by">
                     <option value="price-ascending">Menor a mayor</option>

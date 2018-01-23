@@ -39,7 +39,7 @@
         <param-value>smtp.live.com</param-value>
     </context-param>
     <context-param>
-        <param-name>host</param-name>
+        <param-name>port</param-name>
         <param-value>25</param-value>
     </context-param>
     <context-param>

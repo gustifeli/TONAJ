@@ -48,6 +48,7 @@
         <h1 id="encabezado">CAMPAÑA OTOÑO-INVIERNO</h1>
         <div>
             <div class="container">
+                           <center><img id="vv" src="Image/vv.jpg"></center>
                 <center><span>Ordenar por:</span>
                     <select class="sort-by">
                         <option value="price-ascending">Menor a mayor</option>
@@ -68,6 +69,14 @@
                 </div>
             </div>
             <div><img id="fondo" src="Image/vv.png"></div>
+            <div class="container-fluid">
+                <div class="col-sm-4 col-sm-4 col-sm-4">
+                    <div class="polaroid">
+                        <img src="Image/p1.jpeg" target="_parent">
+                    </div>
+                    
+                </div>
+            </div>
         </div>
         <div>
             <footer class="footer">
