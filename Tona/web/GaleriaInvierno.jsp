@@ -13,6 +13,9 @@
         <link rel="stylesheet" href="Content/stylegalerias.css">
         <link type="text/css" href="Content/bootstrap.css" rel="stylesheet">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+        <link href="Content/lightbox.css" rel="stylesheet">
+        <link href="Content/animate.css" rel="stylesheet">
+<!--        <link href="Content/swiper.min.css">-->
         <link rel="icon" type="image/png" href="Image/imgsolapa.png" />
         <link rel="shortcut icon" href="Image/imgsolapa.png" type="image/png"/>
         <title>Galería</title>
@@ -46,9 +49,12 @@
             </div>
         </div>
         <h1 id="encabezado">CAMPAÑA OTOÑO-INVIERNO</h1>
-        <div>
+                        <div class="swiper-container swiper-container-horizontal">
+                            <div class="swiper-wrapper animated fadeInUp">
+                            <img class="img-responsive" src="Image/a123.png" style="margin-bottom: 1%;">
+                        </div>
+                        </div>
             <div class="container">
-                           <center><img id="vv" src="Image/vv.jpg"></center>
                 <center><span>Ordenar por:</span>
                     <select class="sort-by">
                         <option value="price-ascending">Menor a mayor</option>
@@ -68,32 +74,74 @@
                     </div>
                 </div>
             </div>
-            <div><img id="fondo" src="Image/vv.png"></div>
-            <div class="container-fluid">
-                <div class="col-sm-4 col-sm-4 col-sm-4">
-                    <div class="polaroid">
-                        <img src="Image/p1.jpeg" target="_parent">
-                    </div>
-                    
+            <div class="row">
+                <div class="col-md-4">
+                    <a href="Image/p1.jpeg" data-lightbox="roadtrip">
+                        <img src="Image/p1.jpeg" class="img-thumbnail"></a> 
+                </div>
+                <div class="col-md-4">
+                    <a href="Image/p2.jpeg" data-lightbox="roadtrip">
+                        <img src="Image/p2.jpeg" class="img-thumbnail"></a> 
+                </div>
+                <div class="col-md-4">
+                    <a href="Image/p3.jpeg" data-lightbox="roadtrip">
+                        <img src="Image/p3.jpeg" class="img-thumbnail"></a> 
+                </div>
+                <div class="col-md-4">
+                    <a href="Image/p4.jpeg" data-lightbox="roadtrip">
+                        <img src="Image/p4.jpeg" class="img-thumbnail"></a> 
+                </div>
+                <div class="col-md-4">
+                    <a href="Image/p5.jpeg" data-lightbox="roadtrip">
+                        <img src="Image/p5.jpeg" class="img-thumbnail"></a> 
+                </div>
+                <div class="col-md-4">
+                    <a href="Image/p6.jpeg" data-lightbox="roadtrip">
+                        <img src="Image/p6.jpeg" class="img-thumbnail"></a> 
+                </div>
+                <div class="col-md-4">
+                    <a href="Image/p7.jpeg" data-lightbox="roadtrip">
+                        <img src="Image/p7.jpeg" class="img-thumbnail"></a> 
+                </div>
+                <div class="col-md-4">
+                    <a href="Image/p8.jpeg" data-lightbox="roadtrip">
+                        <img src="Image/p8.jpeg" class="img-thumbnail"></a> 
+                </div>
+                <div class="col-md-4">
+                    <a href="Image/p9.jpeg" data-lightbox="roadtrip">
+                        <img src="Image/p9.jpeg" class="img-thumbnail"></a> 
                 </div>
             </div>
         </div>
-        <div>
-            <footer class="footer">
-                <div>
-                    <nav id="nav" class=" navbar-inverse navbar-fixed-bottom">
-                        <div id="txtfooter">
-                            <p class="text-center credit txtbtn">- TONA - Santa Eufemia, Cordoba, Argentina</p>
-                            <div class="text-center img">
-                                <a href="https://www.instagram.com/t.o.n.aa/?hl=es"> <img src="Image/Instagram.png"></a>
-                                <a href="https://www.facebook.com/TONAAOFICIAL/?pnref=story"> <img src="Image/facebook.png"></a>
+            <div>
+                <footer class="footer">
+                    <div>
+                        <nav id="nav" class=" navbar-inverse navbar-fixed-bottom">
+                            <div id="txtfooter">
+                                <p class="text-center credit txtbtn">- TONA - Santa Eufemia, Cordoba, Argentina</p>
+                                <div class="text-center img">
+                                    <a href="https://www.instagram.com/t.o.n.aa/?hl=es"> <img src="Image/Instagram.png"></a>
+                                    <a href="https://www.facebook.com/TONAAOFICIAL/?pnref=story"> <img src="Image/facebook.png"></a>
+                                </div>
                             </div>
-                        </div>
-                    </nav>
-                </div>
-            </footer>
-        </div>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-        <script src="Scripts/bootstrap.min.js"></script>
+                        </nav>
+                    </div>
+                </footer>
+            </div>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+            <script src="Scripts/bootstrap.min.js"></script>
+            <script src="Scripts/lightbox.js">
+            <script>
+                lightbox.option({
+                                        'resizeDuration': 100,
+                                        'wrapAround': true,
+                                        'alwaysShowNavOnTouchDevices': true,
+                                        'fitImagesInViewport': true,
+                                        'showImageNumberLabel': false
+                                        
+            })
+            </script>
+            <script src="Scripts/swiper.min.js"></script>
+                
     </body>
 </html>
