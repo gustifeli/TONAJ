@@ -52,7 +52,7 @@
         </div>
         <h1 id="contacto">Contacto</h1>
         <div class="container">
-            <form method="post" action="@Url.Action("Contact","Home")">
+            <form method="post" action="Contact">
                   <div class="col-md-6" id="tabla1">
                     <div class="form-group">
                         <br />

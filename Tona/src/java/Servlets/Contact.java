@@ -29,10 +29,10 @@ public class Contact extends HttpServlet {
 
     public void init() {
         ServletContext context = getServletContext();
-        host = context.getInitParameter(host);
-        port = context.getInitParameter(port);
-        user = context.getInitParameter(user);
-        pass = context.getInitParameter(pass);
+        host = context.getInitParameter("host");
+        port = context.getInitParameter("port");
+        user = context.getInitParameter("user");
+        pass = context.getInitParameter("pass");
     }
 
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
@@ -78,8 +78,8 @@ public class Contact extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        
-        String recipient = "gustifeli@hotmail.com";
+        ServletContext context = getServletContext();
+        String recipient = context.getInitParameter("user");
         String subject = "Comentario Web: " + (request.getParameter("nombre")+ " " + request.getParameter("apellido"));
         String content = "Nombre: " + (request.getParameter("nombre"))
                                         + "\nApellido: " + (request.getParameter("apellido"))
