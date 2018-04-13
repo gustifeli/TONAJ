@@ -49,11 +49,7 @@
             </div>
         </div>
         <h1 id="encabezado">CAMPAÑA OTOÑO-INVIERNO</h1>
-                        <div class="swiper-container swiper-container-horizontal">
-                            <div class="swiper-wrapper animated fadeInUp">
-                            <img class="img-responsive" src="Image/a123.png" style="margin-bottom: 1%;">
-                        </div>
-                        </div>
+                        
             <div class="container">
                 <center><span>Ordenar por:</span>
                     <select class="sort-by">
@@ -74,45 +70,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <a href="Image/p1.jpeg" data-lightbox="roadtrip">
-                        <img src="Image/p1.jpeg" class="img-thumbnail"></a> 
-                </div>
-                <div class="col-md-4">
-                    <a href="Image/p2.jpeg" data-lightbox="roadtrip">
-                        <img src="Image/p2.jpeg" class="img-thumbnail"></a> 
-                </div>
-                <div class="col-md-4">
-                    <a href="Image/p3.jpeg" data-lightbox="roadtrip">
-                        <img src="Image/p3.jpeg" class="img-thumbnail"></a> 
-                </div>
-                <div class="col-md-4">
-                    <a href="Image/p4.jpeg" data-lightbox="roadtrip">
-                        <img src="Image/p4.jpeg" class="img-thumbnail"></a> 
-                </div>
-                <div class="col-md-4">
-                    <a href="Image/p5.jpeg" data-lightbox="roadtrip">
-                        <img src="Image/p5.jpeg" class="img-thumbnail"></a> 
-                </div>
-                <div class="col-md-4">
-                    <a href="Image/p6.jpeg" data-lightbox="roadtrip">
-                        <img src="Image/p6.jpeg" class="img-thumbnail"></a> 
-                </div>
-                <div class="col-md-4">
-                    <a href="Image/p7.jpeg" data-lightbox="roadtrip">
-                        <img src="Image/p7.jpeg" class="img-thumbnail"></a> 
-                </div>
-                <div class="col-md-4">
-                    <a href="Image/p8.jpeg" data-lightbox="roadtrip">
-                        <img src="Image/p8.jpeg" class="img-thumbnail"></a> 
-                </div>
-                <div class="col-md-4">
-                    <a href="Image/p9.jpeg" data-lightbox="roadtrip">
-                        <img src="Image/p9.jpeg" class="img-thumbnail"></a> 
-                </div>
-            </div>
-        </div>
+            
             <div>
                 <footer class="footer">
                     <div>
@@ -139,7 +97,7 @@
                                         'fitImagesInViewport': true,
                                         'showImageNumberLabel': false
                                         
-            })
+            }
             </script>
             <script src="Scripts/swiper.min.js"></script>
                 

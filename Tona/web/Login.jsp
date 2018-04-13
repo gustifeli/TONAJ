@@ -36,7 +36,7 @@
                         <div class="form-group">
                             <label>Contraseña </label>
                             <div class="col-md-12">
-                                <input type="text" name="pass" placeholder="Ingrese su Contraseña" class="form-control"
+                                <input type="password" name="pass" placeholder="Ingrese su Contraseña" class="form-control"
                             </div>
                         </div>
                         <div class="form-group">
