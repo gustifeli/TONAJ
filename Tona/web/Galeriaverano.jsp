@@ -13,6 +13,7 @@
         <link type="text/css" href="Content/bootstrap.css" rel="stylesheet">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
         <link rel="icon" type="image/png" href="Image/imgsolapa.png" />
+        <link rel="stylesheet" href="Content/lightbox.css">
         <link rel="shortcut icon" href="Image/imgsolapa.png" type="image/png"/>
         <title>Galería</title>
     </head>
@@ -126,5 +127,6 @@
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script src="Scripts/bootstrap.min.js"></script>
+        <script src="Scripts/lightbox.js"></script>
     </body>
 </html>
