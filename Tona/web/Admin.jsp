@@ -26,7 +26,7 @@
                     <a href="Tona.jsp" id="TONA" class="navbar-brand">TONA</a>
                     <a href="Login.jsp"><img id="img" src="Image/maniqui.png"></a>
                 </div>
-                <div class="navbar-collapse" id="myNavbar">
+                    <div class="navbar-collapse" id="myNavbar">
                     <ul class="nav navbar-nav pull-right">
                         <li id="drop" class="dropdown">
                             <a class="dropdown-toggle" data-toggle="dropdown"><b id="txt" href="#"><img src="Image/ic_user.png"></b></a>
