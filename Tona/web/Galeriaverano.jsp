@@ -72,7 +72,7 @@
             </div>
         </div>
         
-        <div class="row">
+    <center><div class="row">
                 <div class="col-md-4">
                     <a href="Image/p1.jpeg" data-lightbox="roadtrip">
                         <img src="Image/p1.jpeg" class="img-thumbnail"></a> 
@@ -109,7 +109,7 @@
                     <a href="Image/p9.jpeg" data-lightbox="roadtrip">
                         <img src="Image/p9.jpeg" class="img-thumbnail"></a> 
                 </div>
-            </div>
+        </div></center>
     <div>
         <footer class="footer">
             <div>

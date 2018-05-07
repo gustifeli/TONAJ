@@ -53,6 +53,7 @@
 .row {
     width: 100%;
     margin-bottom: 10%;
+   
 }
 
 /*#fondo { //Opcion de colocar fondo en galeria
@@ -88,4 +89,4 @@ h2 {
 }
 .img-thumbnail {
     margin-bottom: 2%;
-}   
+}
