@@ -51,11 +51,15 @@ margin: 0;
     background-color: black;
     color: white;
 }
-#txt {
+/*#txt {
     color: white;
     padding-top: 15px;
-}
+}*/
 
 #aMenu {
     text-align: right;
+}
+
+#myNavbar {
+    margin-right: 20px;
 }

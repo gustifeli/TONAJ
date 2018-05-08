@@ -53,6 +53,7 @@
 .row {
     width: 100%;
     margin-bottom: 10%;
+   
 }
 
 /*#fondo { //Opcion de colocar fondo en galeria
@@ -83,16 +84,9 @@
 h2 {
     margin-left: 15px;
 }
-#vv {
-    opacity: 0.3;
-    height: 35%;
-    width: 15%;
-    float: right;
-    margin: auto;
-    padding: auto;
-    position: static;
-}
-
 .polaroid img {
     width: 200px;
+}
+.img-thumbnail {
+    margin-bottom: 2%;
 }
